@@ -26,7 +26,7 @@ public class AController {
 
 
     @HystrixCommand(commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
     })
     @GetMapping("/list")
     public Object list() throws Exception {

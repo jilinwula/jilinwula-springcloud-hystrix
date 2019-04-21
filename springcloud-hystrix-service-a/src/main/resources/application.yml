@@ -7,3 +7,5 @@ spring:
     name: springcloud-hystrix-service-a
 server:
   port: 8080
+ribbon:
+  ReadTimeout: 5000
